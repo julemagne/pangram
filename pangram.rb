@@ -4,8 +4,8 @@ class Pangram
     return false if phrase == ''
 
     phrase = phrase.downcase
-
-    alphabet = %w[a b c d e f g h i j k l m n o p q r s t u v w x y z]
+    
+    alphabet = Array('a'..'z')
 
     a = alphabet.each_with_object Hash.new do |(k, v), h|
       h[k] = false
